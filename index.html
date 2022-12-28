@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <h1>Реєстрація</h1>
+        <div class="group">
+            <label for="name">Повне ім'я</label>
+            <input class="input" id="name" type="text">
+        </div>
+        <div class="group">
+            <label for="email">Email</label>
+            <input class="input" id="email" type="email">
+        </div>
+        <div class="group">
+            <label for="password">Пароль</label>
+            <input class="input" id="password" type="password">
+        </div>
+        <div class="group">
+            <label for="password_repeat">Пароль ще раз</label>
+            <input class="repeat_password" id="password_repeat" type="password">
+        </div>
+        <div class="group">
+            <label for="gender">Стать</label>
+            <input id="gender" type="radio" name="username" value="male" checked>Чолоіча
+            <input type="radio" name="username" value="femail">Жіноча 
+        </div>
+        <div class="group">
+            <label for="age">Вік</label>
+            <input class="input" id="age" type="tel">
+        </div>
+        <div class="group">
+            <label for="course">Курс</label>
+            <select class="input" id="course">
+                <option multiple>Front-End</option>
+                <option multiple>Back-End</option>
+                <option multiple>Project Management</option>
+                <option multiple>QA Manual</option>
+            </select>
+        </div>
+        <div class="group">
+            <label for="address">Повна адреса</label>
+            <textarea class="address" id="address"></textarea>
+        </div>
+        <div class="group">
+            <input id="agree" type="checkbox">
+            <label for="agree"> Я погоджуюсь з обробкою персональних даних</label>
+        </div>
+        <div class="button">
+            <button type="reset">Очистити форму</button>
+            <button type="submit">Зареєструатись</button>
+        </div>
+    </form>
+</body>
+</html>
